@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Dom</title>
+    <link rel='stylesheet' href='main.css'>
+</head>
+<body>
+    <h1 id="head">Hello Welcome</h1>
+    <div id="box">
+    </div>
+    <div class="cls">
+
+    </div>
+    <script>
+        let element=document.getElementById('head');
+        element.textContent+="To JavaScript";
+        console.log(element.textContent);
+        console.log(element.style.color="red");
+        let element2=document.getElementById('box');
+        element2.innerHTML='<p>this is innerhtml</p>';
+        element2.className='header';
+        console.log(element2.innerHTML);
+        let element3=document.getElementsByClassName('cls');
+        console.log(element3[0]);
+        let element4=document.querySelector('h1');
+        console.log(element4);
+        let para1=document.createElement('p');
+        para1.textContent="Newly created element";
+        para1.id='newelement';
+        let para2=document.createElement('p');
+        para2.textContent="Newly created element2";
+        element.prepend(para1);
+        element.append(para2);
+    </script>
+    
+</body>
+</html>
