@@ -15,9 +15,9 @@
             <div id="nav" class="collapse navbar-collapse justify-content-end">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     <li class="nav-item"><a class="nav-link" href=""></a></li>
                 </ul>
             </div>
@@ -30,7 +30,7 @@
         <a href="" class="btn btn-dark ">Contact Me</a>
     </div>
     <div id="about">
-        <h2>About Me</h2>
+        <h2 class="text-center">About Me</h2>
         <p>
             Iam a Computer science graduate learning full stack web development.I enjoy building simple,clean and responsive web pages,and Iam now learning React,Node.js and MongoDB
             <br>
@@ -61,13 +61,77 @@
             </tr>
         </table>
     </div>
-    <div class="bg-dark text-light text-center">
+    <div id="skills" style="background-color: lightgray;">
+        <h2 class="text-center">Skills</h2>
+        <div class="card m-2">
+            <div class="card-body">
+                <h3 class="card-title">Frontend</h3>
+                <p class=" btn btn-dark">HTML</p>
+                <p class=" btn btn-dark">CSS</p>
+                <p class=" btn btn-dark">Bootstrap</p>
+                <p class=" btn btn-dark">JavaScript</p>
+                <p class=" btn btn-dark">React(learning)</p>
+            </div>
+        </div>
+        <div class="card m-2">
+            <div class="card-body">
+                <h3 class="card-title">Backend</h3>
+                <p class=" btn btn-dark">Node.js(Learning)</p>
+                <p class=" btn btn-dark">Express(Learning)</p>
+                <p class=" btn btn-dark">MongoDB(learning)</p>
+            </div>
+        </div>
+        <div class="card m-2">
+            <div class="card-body">
+                <h3 class="card-title">Tools</h3>
+                <p class=" btn btn-dark">Git</p>
+                <p class=" btn btn-dark">GitHub</p>
+                <p class=" btn btn-dark">Vs Code</p>
+                <p class=" btn btn-dark">Chrome DevTools</p>
+            </div>
+        </div>        
+    </div>
+    <div id="projects">
+        <h2 class="text-center">Projects</h2>
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Landing Page</h3>
+                <p>A responsive landing page with a navbar,feature cards,and contact form.</p>
+                <p class="btn btn-primary">Html</p>
+                <p class="btn btn-primary">Bootstrap</p>
+                <div style="background-color: lightgray;" class="py-2">
+                    <button class="btn btn-primary">Live Demo</button>
+                    <button class="btn btn-secondary">Code</button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <div id="contact" class="m-2" style="background-color: lightgray;">
+        <h2 class="text-center">Contact Me </h2>
+        <form action="">
+            <label  class="form-label" for="name">Name</label>
+            <input class="form-control" type="text" id="name">
+            <br>
+            <label class="form-label" for="email">Email</label>
+            <input class="form-control" type="email" id="email">
+            <br>
+            <label class="form-label" for="message">Message</label>
+            <textarea class="form-control" id="message"></textarea>
+            <br>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+
+    </div>
+    <footer class="bg-dark text-light text-center">
         <a class="text-light" href="#">Github</a>
         <a class="text-light" href="">LinkedIn</a>
         <a class="text-light" href="">Email</a>
         <p>&copy 2026 Mohamed Hisham A</p>
-    </div>
-
+    </footer>    
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"></script>
 </html>
