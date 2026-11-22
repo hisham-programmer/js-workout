@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Crud</title>
+    <link rel="stylesheet" href="../crud/crud.css">
+</head>
+<body>
+    <div class="app">
+        <h2>Post Manager</h2>
+        <p id="status" class="status"></p>
+        <!--create/update using form-->
+        <form action="">
+            <input type="text" id="title" placeholder="Title">
+            <textarea id="body" rows="3" placeholder="Write Something"></textarea>
+            <button type="submit" id="saveBtn">Add Post</button>
+            <button type="button" id="cancelBtn" hidden>Cancel</button>
+        </form>
+        <!--Read :list of posts appears here-->
+        <div id="postList"></div>
+    </div>
+
+</body>
+</html>
